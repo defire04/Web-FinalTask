@@ -1,9 +1,7 @@
 class TextAnalyzer {
     constructor(text) {
         this.text = text;
-        // this.words = text.match(/[a-zA-Zа-яА-Я]\w*/g);
         this.words = text.match(/[а-щА-ЩЬьЮюЯяЄєЇїІіҐґа-яА-ЯёЁa-zA-Z]+/g);
-        // this.words = text.match(/[^\s|\d|\,|\.|\+|\-|\*|\/|\(|\)]/g);
         this.wordsSet = new Set(
             this.words.map((element) => element.toLowerCase())
         );
