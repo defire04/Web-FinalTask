@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    max-width: 1200px;
+    margin-inline: auto;
+    gap: 20px;
+}
+
+.input-area {
+    display: flex;
+    text-align: center;
+    grid-column-start: 2;
+    align-items: center;
+}
+
+.input-area-title {
+    display: inline-block;
+}
+
+.text-input {
+    display: block;
+    resize: none;
+}
+
+.btn {
+    margin-top: 12px;
+}
+
+.text::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.search-container {
+    grid-column-start: 2;
+}
+
+.search-form {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.search-container button {
+    display: flex;
+    padding: 6px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background: #ccc;
+}
+
+.text-input {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: black solid 1px;
+}
+
+table {
+    border-collapse: collapse;
+    border: 5px double #000000;
+
+    font-size: 1em;
+    font-family: sans-serif;
+}
+
+th {
+    border: 2px double #fff;
+    background-color: #fff;
+    padding: 0.5em;
+}
+
+td {
+    border: 2px double #000000;
+    background-color: #fff;
+    padding: 0.5em;
+}
+
+tr:nth-child(even) td {
+    background-color: #f2f2f2;
+}
+
+#suggestions {
+    width: 300px;
+    padding: 5px 10px 5px 5px;
+    background-color: lightgray;
+    list-style: none;
+    position: absolute;
+}
+
+#suggestions:empty {
+    padding: 0;
+}
+
+#suggestions input {
+    display: none;
+}
+
+#suggestions li {
+    cursor: pointer;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./styles/style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="search-container">
+                <form class="search-form" id="search-form" name="search-form">
+                    <input
+                        type="text"
+                        placeholder="Search.."
+                        name="search"
+                        class="text-input"
+                        id="search-input"
+                    />
+                    <button
+                        type="submit"
+                        class="btn search-button"
+                        id="search-button"
+                    >
+                        Search
+                    </button>
+                </form>
+                <ul id="suggestions"></ul>
+            </div>
+            <div class="words-table">
+                <table class="words-count" id="words-count"></table>
+            </div>
+            <div class="text" id="users-text"></div>
+        </div>
+
+        <script src="./scripts/secondApp.js" type="module"></script>
+    </body>
+</html>
